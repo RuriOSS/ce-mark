@@ -13,6 +13,7 @@ void t_f()
 	printf("Always fail:\n");
 	func_f() :>;
 	func_f() :<;
+	func_f() :<, :>;
 	func_f() :<
 	{
 		printf("panic\n");
@@ -31,6 +32,7 @@ void t_t()
 	printf("Always success:\n");
 	func_t() :>;
 	func_t() :<;
+	func_t() :<, :>;
 	func_t() :<
 	{
 		printf("panic\n");
