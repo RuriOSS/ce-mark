@@ -89,6 +89,7 @@ int fd_5 = open("file5.txt", O_RDONLY) :>;
 
 # Note:
 CE-lang has no super cow powers.    
+CE-lang is a postfix, a tail, but not the cat (C-lang).    
 The tail will never wag the cat.    
 CE-lang is just for zipping complex unhappy path logic, and make it more readable.    
 CE-lang just implements `:<` and `:>`, `and #[[ce_foo()]]`, the rest is just C code, and every CE-lang feature will be translated to C code, You debug/run the generated C code, not the CE-lang code.   
