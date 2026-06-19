@@ -51,6 +51,7 @@ In one word, CE-lang makes a zipped error handling in C, and it's kawaii.
 #[[ce_dft(open, log)]]
 ```
 
+.hce shoud only contain the three simple commands, and other definations, like `#define panic()`, `#define log()`, and `typedef` should be in .ce or your .h, as .hce is just `happy c ending` file.    
 # CE-lang design goals:
 ```ce
 // Will call panic() if open returns < 0
