@@ -88,4 +88,4 @@ CE-lang just implements `:<` and `:>`, `and #[[ce_foo()]]`, the rest is just C c
 #[[ce_reg()]] is enforced, or ce will not know how to handle the error.      
 In one word, CE-lang is like yet another C-style .unwrap().    
 And, there will be many ubs, so always do a diff-check between .ce and .c, and make sure the generated code is what you want.    
-You can use _CE_DFT for `:>` and _CE_PAN for `:<`, just recover with one `sed`, so your IDE will not scream too much. But for `foo() :<, :>`, your IDE will scream anyway, although these code are less in real-world case.
+You can use _CE_DFT for `:>` and _CE_PAN for `:<`, just recover with one `sed`, so your IDE and clang-format will not scream at it. But for `foo() :<, :>`, your IDE will scream anyway, although these code are less in real-world case.
