@@ -82,6 +82,9 @@ int fd_4 = open("file4.txt", O_RDONLY) :<
 	exit(1);
 }
 :>;
+
+// Just add a default log handler for open, will be triggered even fail.
+int fd_5 = open("file5.txt", O_RDONLY) :>;
 ```
 
 # Note:
