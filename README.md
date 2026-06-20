@@ -145,6 +145,7 @@ cwte will use line-no for internal variable name, so you will match generited co
 # Future:
 Maybe we can have a `#[[ce_enforce(func)]]` to enforce you catch result for func in cwte, and `:D` for ignoring the error, and `:o` for only log when error, `:~ { ... }` for a custom handler, and even `::}` to output a nautilus in ceg, and use `::}` as a readable todo note.        
 Maybe one day it can be C-Way-To-Evolve, but at least these ideas shows that c is extensible, and cwte is also.    
+"If we have to evolve, are there a trackable way?"    
 # Ascii logo:
 ```
          _-''''-._
