@@ -153,7 +153,7 @@ Maybe one day it can be C-Way-To-Evolve, but at least these ideas shows that c i
      |   /       \    |    
      |   |   :>.,/    |
      \   '.       ,___/~~~
-     `.   '-----`   /~~~~~~
+     `.   '-----`'  /~~~~~~
        `.          /~~~~~~~~
          '-.____. /~~~~~~~~~~~
 ```
