@@ -133,7 +133,7 @@ Cwte should be used step-by-step, and always check the generated code to make su
 cwte will use line-no for internal variable name, so you will match generited code with .ce easily.    
 # Future:
 Maybe we can have a `#[[ce_enforce(func)]]` to enforce you catch result for func in cwte, and `:D` for ignoring the error, and `:o` for only log when error, `:~ { ... }` for a custom handler, and even `::}` to output a nautilus in ceg, and use `::}` as a readable todo note.        
-Maybe one day it can be C-Evolved, but at least these ideas shows that c is extensible, and cwte is also.    
+Maybe one day it can be C-Way-To-Evolve, but at least these ideas shows that c is extensible, and cwte is also.    
 # Ascii logo:
 ```
          _-''''-._
