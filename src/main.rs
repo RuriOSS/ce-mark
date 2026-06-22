@@ -3,6 +3,7 @@
  * Don't blame me QwQ, all rust code is written by LLMs,
  * and I have never learned rust in fact.
  */
+use colored::*;
 use rustix::fs::{MemfdFlags, memfd_create};
 use rustix::fs::{SealFlags, fcntl_add_seals};
 use std::env;
@@ -43,15 +44,24 @@ fn setup_panic_hook() {
 // Print a nautilus with file name, line number and content.
 // The `::}` is a cwte TODO note.
 fn print_nautilus(file: &str, line_no: usize, content: &str, enforce: bool) {
-    println!("Cwte tail at {} line {}:", file, line_no);
-    println!(">>");
-    println!(">>  {}", content);
-    println!(">>");
+    println!(
+        "{}{}{}{}:",
+        "Cwte tail at ".yellow(),
+        file.to_string().blue(),
+        " line ".yellow(),
+        line_no.to_string().blue()
+    );
+    println!("{}", ">>".yellow());
+    println!("{}{}", ">>  ".yellow(), content.blue());
+    println!("{}", ">>".yellow());
     // Cooked by rust at the beginning, now I cry.
     // `}` should be `}}` in rust fmt.
     // I miss my cprintf now.
-    println!("::}} Here's a nautilus, have an ice cream and write a fix,");
-    println!("    and don't left it to be a fossil QwQ");
+    println!(
+        "{}",
+        "::}} Here's a nautilus, have an ice cream and write a fix,".yellow()
+    );
+    println!("{}", "    and don't left it to be a fossil QwQ".yellow());
     if enforce {
         // If enforce is true, panic to prevent compiling.
         panic!("Cwte ::}} tail is enforced, you must fix this before compiling.");
@@ -121,7 +131,8 @@ fn main() {
         .write_all(&memfd_content)
         .expect("Failed to write to output file");
     println!(
-        "Cwte processing completed. Output written to {}",
-        output_file
+        "{}{}",
+        "Cwte processing completed. Output written to ".green(),
+        output_file.blue()
     );
 }
