@@ -104,8 +104,14 @@ For `gen` mode, the generated code should be at least fully readable and auditab
 You should never use cwte in CI or any production code, as cwte is just a dev-stage-only code generator.    
 Cwte should always be audited by human, it's just an agent.    
 Anyway, trust the c code, not the cwte code and cwte-generator.    
-
-# Project structure:
+# ::::< The non-goal:
+Cwte is never a .unwrap() or something like that, as C has never provided a way to do that.    
+If you expect something like:    
+```c
+foo(bar() :<);
+```
+Then remove your brain. The only way to implement this is to use gnu extension `({ ... })`, and this is not a good idea. The generated code will be unreadable and un-auditable, and panic() is a dangerous side-effect, as an accuountable tail, cwte will never try that.        
+# ::::< Project structure:
 A cwte project should be like:
 ```
 project
