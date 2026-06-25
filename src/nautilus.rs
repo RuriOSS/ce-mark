@@ -34,7 +34,7 @@ fn print_nautilus(file: &str, content: &str, enforce: bool) {
         "{}",
         "::} Here's a nautilus, have an ice cream and write a fix,".yellow()
     );
-    println!("{}", "    and don't left it to be a fossil QwQ\n".yellow());
+    println!("{}", "    and don't leave it to be a fossil QwQ\n".yellow());
     if enforce {
         // If enforce is true, panic to prevent compiling.
         // Cooked by rust at the beginning, now I cry.

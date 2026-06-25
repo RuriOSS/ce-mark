@@ -57,12 +57,15 @@ fn cwte_generator(input: &str, output: &str) {
         .write_all(&memfd_content)
         .expect("Failed to write to output file");
     println!(
-        "{}{}{}",
+        "{}{}",
         "\nCwte processing completed. Output written to ".green(),
-        output.blue(),
-        " ::::<".yellow()
+        output.blue()
     );
-    println!("{}", "I hope I'm just a cute tail...".green());
+    println!(
+        "{}{}",
+        "I hope I'm just a cute tail ".green(),
+        "::::<".yellow()
+    );
 }
 fn scmp_generator(input: &str, output: &str) {
     let input_file = fs::File::open(input).expect("Failed to open input file");
@@ -88,12 +91,15 @@ fn scmp_generator(input: &str, output: &str) {
         .write_all(&memfd_content)
         .expect("Failed to write to output file");
     println!(
-        "{}{}{}",
+        "{}{}",
         "\nCwte processing completed. Output written to ".green(),
-        output.blue(),
-        " ::::<".yellow()
+        output.blue()
     );
-    println!("{}", "I hope I'm just a cute tail...".green());
+    println!(
+        "{}{}",
+        "I hope I'm just a cute tail ".green(),
+        "::::<".yellow()
+    );
 }
 fn main() {
     /*

@@ -7,10 +7,10 @@
 >
 >This doc is not a spec or a commitment. It requires future refinement and implementation from the author, and all features remain to be determined at later stage.
 
-But, if you throw this doc to LLM, let LLM refine it to spec, and use LLM as your cwte, you have cwte right now.    
+But, if you throw this doc to LLM, let LLMs refine it to spec, and use LLM as your cwte, you have cwte right now.    
 >"I'm a lazy dev, and I used :< sad face to mark the code that might fail, as my assistant, you should implement the :< mark as error handling logic for these code".   
 
-Or just fork this repo, and implement yourself, cwte and `:<` shouldn't be my own patent, and I have no time on it, I just want to have an ice cream.     
+Or just fork this repo, and implement yourself, cwte and `:<` shouldn't be my own patent, and I have no time for it, I just want to have an ice cream.     
 And, the real cwte-generator will just be a dev-stage-only code generator for ruri. It will not act on other unnecessary features I will not use it in my code.     
 # Warning:
 As cwte can bomb everything, it should be extremely careful to use.     
@@ -31,8 +31,10 @@ Cwte tail at ./test.ce line 10:
 >>      t() ::};
 >>
 ::} Here's a nautilus, have an ice cream and write a fix,
-    and don't left it to be a fossil QwQ
-Cwte processing completed. Output written to ./test.ce.c
+    and don't leave it to be a fossil QwQ
+
+Cwte processing completed. Output written to ./test.c
+I hope I'm just a cute tail ::::<
 ```
 And I had a special rule for seccomp.c in ruri, so you can already see cwte in ruri.    
 Anyway I've successfully made a 1853->1210 line code reduction in seccomp.c, 34.7% code reduction, that's a good start.    
@@ -43,7 +45,7 @@ Cwte (cute) stands for "C with tailed error-handler/Cute way to handle error/~~C
 Just a cute error handling extension for C.    
 With no other syntax breaking, and the tail will never wag the cat.    
 We will just have a new sad face `:<` for error handling, and `#[[ce_foo()]]` for code generation.      
-These syntax will be translated to C code, you can use cwte for error handling, cwte-generator transform it to C, and you compile/run/debug the generated C code.      
+These syntax will be translated to C code, you can use cwte for error handling, cwte-generator will transform it to C, and you compile/run/debug the generated C code.      
 In short, cwte is just for zipping complex unhappy path logic, and make it more readable.    
 I just hope it can save some time, so I can have an ice cream.    
 # ::::< The core:
@@ -56,7 +58,7 @@ The tail should never wag the cat also means `tail` command should not call `|ca
 - The tail can/should/will/must never wag the cat.
 - Cwte is garbage-in-garbage-out, if the given rules are even wrong, cwte cannot be correct.
 - Cwte should be reversible, if you don't like, thow it away and rollback to c.
-- Cwte should not spread any bullshit, or human auditor shuld fire it.
+- Cwte should not spread any bullshit, or human auditor should fire it.
 - We are c users, not cwte users.    
 - Cwte is dangerous, the tail can make everything cooked, so:
   - Always check the generated code.
