@@ -116,6 +116,7 @@ If you expect something like:
 foo(bar() :<);
 ```
 Then remove your brain. The only way to implement this is to use gnu extension `({ ... })`, and this is not a good idea. The generated code will be unreadable and un-auditable, and panic() is a dangerous side-effect, as an accuountable tail, cwte will never try that.        
+And if you expect complex AST parsing, cwte might never do that. The more complex features means the more complex bugs, and you will get many weird bugs if you don't have enough PLT knowledge and a good test coverage.    
 # ::::< Project structure:
 A cwte project should be like:
 ```
