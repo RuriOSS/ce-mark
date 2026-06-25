@@ -110,7 +110,7 @@ Cwte should always be audited by human, it's just an agent.
 Anyway, trust the c code, not the cwte code and cwte-generator.    
 # ::::< The non-goal:
 There's no silver bullet in C programming.    
-Cwte is never a .unwrap() or something like that, as C also has never provided a way to do that.    
+Cwte is never a .unwrap() or even owenership analyzer, as C also has never provided a way to do that.    
 If you expect something like:    
 ```c
 foo(bar() :<, buz());
