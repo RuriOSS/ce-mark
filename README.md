@@ -225,7 +225,17 @@ Rust users unhappy, fp users unhappy, linux users unhappy, but me happy, so leem
 
 # cwte design goals:
 Warning: draft only, never assume anything, and never trust the tail.    
-Warning: just some ideas, we will only focuse on `:<` now.    
+Warning: just some ideas, we will only focuse on `:<` now.   
+Symbols:     
+```
+:<  _CE_PAN :panic when error
+:>  _CE_HAP :happy path when no error
+:o  _CE_LWE :log when error
+::} _CE_NUS :just a todo mark
+:D  _CE_LAF :ignore error handler forever
+:3  _CE_DFM :do that for me, an AI-native mark
+```
+In code:    
 ```c
 // Will call panic() if open returns < 0
 int fd = open("file.txt", O_RDONLY) :<;
