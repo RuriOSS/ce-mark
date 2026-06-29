@@ -327,4 +327,4 @@ Cwte never assumes it won't become a fossil.
 <p align="center">人が人の傷みを聴くためだ</p>
 <p align="center">急げ悲しみ、翼に変われ</p>
 <p align="center">急げ傷跡、羅針盤になれ</p>
-<p align="center">まだ飛べない雛たちみたいに</p>
+<p align="center">まだ飛べない雛たちみたいに...</p>
